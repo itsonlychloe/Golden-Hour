@@ -12,9 +12,9 @@
 		314C11C4228418DA00B755EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314C11C3228418DA00B755EE /* Assets.xcassets */; };
 		314C11C7228418DA00B755EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314C11C5228418DA00B755EE /* LaunchScreen.storyboard */; };
 		314C11D12284196100B755EE /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C11CE2284196100B755EE /* CustomAnnotation.swift */; };
-		314C11D22284196100B755EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C11CF2284196100B755EE /* ViewController.swift */; };
 		314C11D32284196100B755EE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C11D02284196100B755EE /* SecondViewController.swift */; };
 		314C11D522841ACA00B755EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 314C11D422841ACA00B755EE /* GoogleService-Info.plist */; };
+		D86139F822842AA000A9DE58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86139F722842AA000A9DE58 /* ViewController.swift */; };
 		E42084299EABEFAC0EA11F49 /* Pods_Golden_Hour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897041BCD535CE603EB01FD5 /* Pods_Golden_Hour.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,11 +26,11 @@
 		314C11C6228418DA00B755EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		314C11C8228418DA00B755EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		314C11CE2284196100B755EE /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
-		314C11CF2284196100B755EE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Documents/GitHub/DMD-GOLDEN-HOUR/Golden Hour/Golden Hour/ViewController.swift"; sourceTree = "<group>"; };
 		314C11D02284196100B755EE /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		314C11D422841ACA00B755EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		897041BCD535CE603EB01FD5 /* Pods_Golden_Hour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golden_Hour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FAE66A63C85336D5E3FA6B /* Pods-Golden-Hour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden-Hour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Golden-Hour/Pods-Golden-Hour.debug.xcconfig"; sourceTree = "<group>"; };
+		D86139F722842AA000A9DE58 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DFD7D57E185A0AE84B9A6AEE /* Pods-Golden-Hour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden-Hour.release.xcconfig"; path = "Pods/Target Support Files/Pods-Golden-Hour/Pods-Golden-Hour.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				314C11BC228418D900B755EE /* AppDelegate.swift */,
-				314C11CF2284196100B755EE /* ViewController.swift */,
+				D86139F722842AA000A9DE58 /* ViewController.swift */,
 				314C11D02284196100B755EE /* SecondViewController.swift */,
 				314C11CE2284196100B755EE /* CustomAnnotation.swift */,
 				314C11C0228418D900B755EE /* Main.storyboard */,
@@ -232,8 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86139F822842AA000A9DE58 /* ViewController.swift in Sources */,
 				314C11BD228418D900B755EE /* AppDelegate.swift in Sources */,
-				314C11D22284196100B755EE /* ViewController.swift in Sources */,
 				314C11D32284196100B755EE /* SecondViewController.swift in Sources */,
 				314C11D12284196100B755EE /* CustomAnnotation.swift in Sources */,
 			);
