@@ -14,23 +14,7 @@ class SecondViewController: UIViewController {
         imageView.image = UIImage(named: annotation.title!)
         imageView.clipsToBounds = true
         
-        uploadImage()
-    }
-    
-    func uploadImage() {
-        
-        let image = imageView.image!
-        let data = image.jpegData(compressionQuality: 0.6)!
-        
-        let uuid = UUID().uuidString
-        let ref = Storage.storage().reference(withPath: uuid)
-        
-        let metadata = StorageMetadata()
-        metadata.contentType = "image/jpeg"
-        
-        ref.putData(data, metadata: metadata) { metadata, error in
-            print(metadata)
-        }
+       
         
     }
     
