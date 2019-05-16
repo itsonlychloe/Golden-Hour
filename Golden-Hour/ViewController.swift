@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         
         mapView.delegate = self
         
-         goldenHourAlert(title: "Golden Hour", message: "Its Golden Hour in Your Location at 6:30 it is Currently: \(hours):\(minutes)")
+         goldenHourAlert(title: "Golden Hour", message: "Its Golden Hour in Your Location at 6:30 it is currently: \(hours):\(minutes)")
       
         
     }
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
-        alert.addAction(UIAlertAction(title: "ok", style:  UIAlertAction.Style.default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "OK", style:  UIAlertAction.Style.default, handler: { (action) in
             
             alert.dismiss(animated: true, completion: nil)
             
