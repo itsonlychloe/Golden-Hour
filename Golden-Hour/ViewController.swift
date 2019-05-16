@@ -11,6 +11,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let span = MKCoordinateSpan(latitudeDelta: 3.0, longitudeDelta: 3.0)
+        let region = MKCoordinateRegion(center:CLLocationCoordinate2D(latitude:51.246753, longitude: -1.085219), span: span)
+        mapView.setRegion(region, animated: true)
         
        
         let docRef = Firestore.firestore().collection("Locations")
@@ -44,6 +47,10 @@ extension ViewController: MKMapViewDelegate {
 }
 func loadLocations() {
 }
+
+
+
+
 
 
 
