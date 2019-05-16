@@ -4,7 +4,6 @@ import Firebase
 
 class ViewController: UIViewController {
     
-    //ghjgygh
     
     @IBOutlet weak var mapView: MKMapView!
   
