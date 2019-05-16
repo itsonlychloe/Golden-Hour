@@ -10,6 +10,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let date = Date()
+        let calendar = Calendar.current
+        let hours = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        print("\(hours):\(minutes)")
+        
         let span = MKCoordinateSpan(latitudeDelta: 3.0, longitudeDelta: 3.0)
         let region = MKCoordinateRegion(center:CLLocationCoordinate2D(latitude:51.246753, longitude: -1.085219), span: span)
         mapView.setRegion(region, animated: true)
@@ -25,6 +31,7 @@ class ViewController: UIViewController {
         
         mapView.delegate = self
         
+         goldenHourAlert(title: "Golden Hour", message: "Its Golden Hour in Your Location at 6:30 it is Currently: \(hours):\(minutes)")
       
         
     }
@@ -33,7 +40,24 @@ class ViewController: UIViewController {
         vc.annotation = sender as? CustomAnnotation
     }
     
+    func goldenHourAlert (title: String, message:String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "ok", style:  UIAlertAction.Style.default, handler: { (action) in
+            
+            alert.dismiss(animated: true, completion: nil)
+            
+        }))
+        
+        self.present(alert, animated: true, completion: nil )
+        
+    }
+    
+
 }
+
+
 
 extension ViewController: MKMapViewDelegate {
     
