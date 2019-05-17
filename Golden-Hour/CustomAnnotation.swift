@@ -8,7 +8,7 @@ class CustomAnnotation: NSObject, MKAnnotation {
     var title: String?
     var textView: String?
     
-    
+// pulling info from firestore to app.
     init(document: DocumentSnapshot) {
         let data = document.data()!
         title = data["Name"] as? String

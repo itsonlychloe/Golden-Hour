@@ -17,13 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="n6z-Dx-a0P">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="n6z-Dx-a0P">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-mw-17b">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-mw-17b">
                                 <rect key="frame" x="18" y="496" width="339" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="q3B-Uv-7fk"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Get that summer glow all year round">
                                         <attributes>
@@ -35,16 +36,33 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo7" translatesAutoresizingMaskIntoConstraints="NO" id="W6j-3o-qa2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo7" translatesAutoresizingMaskIntoConstraints="NO" id="W6j-3o-qa2">
                                 <rect key="frame" x="18" y="42" width="347" height="261"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="261" id="35W-ap-7yk"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunface2" translatesAutoresizingMaskIntoConstraints="NO" id="aAS-uz-VF4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunface2" translatesAutoresizingMaskIntoConstraints="NO" id="aAS-uz-VF4">
                                 <rect key="frame" x="46" y="260" width="384" height="294"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n6z-Dx-a0P" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="1H1-Ll-xmr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aAS-uz-VF4" secondAttribute="trailing" constant="-71" id="8DR-fZ-4C0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W6j-3o-qa2" secondAttribute="trailing" constant="10" id="Exd-bK-cPw"/>
+                            <constraint firstItem="aAS-uz-VF4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="I4q-uG-aYT"/>
+                            <constraint firstItem="aAS-uz-VF4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="PxA-LJ-Zvg"/>
+                            <constraint firstAttribute="trailing" secondItem="n6z-Dx-a0P" secondAttribute="trailing" id="SKN-p6-miq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aAS-uz-VF4" secondAttribute="bottom" constant="113" id="VTi-MO-REI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vuL-mw-17b" secondAttribute="bottom" constant="119" id="Zhr-f0-3ef"/>
+                            <constraint firstItem="W6j-3o-qa2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="hn9-Z5-ujy"/>
+                            <constraint firstItem="vuL-mw-17b" firstAttribute="leading" secondItem="W6j-3o-qa2" secondAttribute="leading" id="nLa-jm-M9y"/>
+                            <constraint firstItem="n6z-Dx-a0P" firstAttribute="centerX" secondItem="vuL-mw-17b" secondAttribute="centerX" id="o56-SX-bVz"/>
+                            <constraint firstItem="W6j-3o-qa2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="qii-bT-aRO"/>
+                            <constraint firstItem="n6z-Dx-a0P" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xIL-Po-k3T"/>
+                            <constraint firstItem="n6z-Dx-a0P" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="yK9-0H-MJR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
